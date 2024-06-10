@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "peliculas_backend": {
+      "main": "src/peliculas_backend/main.mo",
+      "type": "motoko"
+    },
+    "peliculas_frontend": {
+      "dependencies": [
+        "peliculas_backend"
+      ],
+      "source": [
+        "src/peliculas_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "peliculas_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
